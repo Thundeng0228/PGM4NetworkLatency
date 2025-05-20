@@ -3,9 +3,13 @@ Source code for paper:
 L. Deng et al. Real-Time Network Latency Estimation with Pre-Trained Generative Models, IEEE TNNLS, 2025.
 
 Requiments:
+
 torch==1.2.0+cu92
+
 tqdm==4.64.1
+
 script==1.7.3
+
 numpy==1.21.6
 
 Runing example using the Seattle dataset:

@@ -287,7 +287,7 @@ def test_dcs(latent_dim=99, batch_size=64, m_dim=5000, num_training_epoch=100, l
     gen.load_state_dict(torch.load('./latency_gen_dcs2.pth'))
     policy = Policy(in_dim=latent_dim+99**2).to(device)
     policy.load_state_dict(torch.load('./latency_policy_dcs.pth'))
-
+    print('sampling rate =', m_dim/(99*99))	
     MSELoss = nn.MSELoss()
     pbar = tqdm(range(num_training_epoch))
     n_batch = 0
